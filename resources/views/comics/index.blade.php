@@ -8,6 +8,7 @@
             @forelse ($comics as $comic)
                 <li>
                     <h4>{{ $comic['title'] }}</h4>
+                    <a href="{{ route('comics.show', $comic) }}">Più dettagli</a>
                 </li>
             @empty
                 <h3 class="text-danger">
