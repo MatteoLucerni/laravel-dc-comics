@@ -11,7 +11,17 @@
 </head>
 
 <body>
-    <h1>TEST</h1>
+    <div class="container">
+        <h1>TEST</h1>
+        <ul>
+            @forelse ($comics as $comic)
+                <li>
+                    <h4>{{ $comic['title'] }}</h4>
+                </li>
+            @empty
+            @endforelse
+        </ul>
+    </div>
 </body>
 
 </html>
