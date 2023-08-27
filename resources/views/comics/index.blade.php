@@ -5,7 +5,7 @@
 @section('main-content')
     <main>
         <a href="{{ route('comics.create') }}" class="d-block text-success text-end text-decoration-none ">
-            + Aggiungi una squadra
+            + Aggiungi un fumetto
         </a>
         <ul>
             @forelse ($comics as $comic)
