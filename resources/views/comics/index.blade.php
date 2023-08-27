@@ -9,9 +9,9 @@
         </a>
         <ul>
             @forelse ($comics as $comic)
-                <li>
-                    <h4>{{ $comic['title'] }}</h4>
-                    <a href="{{ route('comics.show', $comic) }}">Più dettagli</a>
+                <li class="mb-4 border p-3 rounded ">
+                    <h4 class="d-inline-block">{{ $comic['title'] }}</h4>
+                    <a class="ms-3" href="{{ route('comics.show', $comic) }}">Più dettagli</a>
                 </li>
             @empty
                 <h3 class="text-danger">
