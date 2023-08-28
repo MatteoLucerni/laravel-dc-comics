@@ -4,16 +4,17 @@
 
 @section('main-content')
     <main>
-        <section id="edit-comic">
+        <div class="container" id="edit-comic">
             <div class="card-header">
                 <h1>Modifica il fumetto</h1>
-                <a href="{{ route('comics.index') }}">Indietro</a>
+                <a href="{{ route('comics.show', $comic) }}">Indietro</a>
             </div>
             <div class="card-body">
-                <form action="{{ route('comics.store') }}" method="POST">
+                <form method="POST" action="{{ route('comics.update', $comic) }}">
                     @csrf
+                    @method('PUT')
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-8">
                             <div class="mb-3">
                                 <label for="title" class="form-label">Titolo</label>
                                 <input name="title" required type="text" class="form-control" id="title"
@@ -55,8 +56,8 @@
                                     value="{{ $comic->writers }}">
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="mb-3 mx-5">
+                        <div class="col-8">
+                            <div class="mb-3">
                                 <label for="floatingTextarea2">Descrizione</label>
                                 <div class="form-floating">
                                     <textarea required name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2">
@@ -65,12 +66,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inputs text-center">
+                        <div class="options text-center my-5">
                             <input class="btn btn-success" type="submit" value="MODIFICA">
                             <input class="btn btn-secondary" type="reset" value="SVUOTA CAMPI">
                         </div>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
 @endsection
