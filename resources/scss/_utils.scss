@@ -21,7 +21,8 @@ a.active {
     justify-content: space-around;
 }
 
-a.btn {
+a.btn,
+button.btn {
     border: 2px solid $blue;
     padding: 20px;
     color: white;

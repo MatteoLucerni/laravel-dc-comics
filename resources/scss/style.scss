@@ -101,4 +101,17 @@ section {
         text-decoration: none;
         color: white;
     }
+
+    a.d-block {
+        margin-top: 40px;
+    }
+}
+
+#action {
+    a.text-center {
+        text-align: center;
+        display: block;
+        margin: 50px 0;
+        color: blue;
+    }
 }

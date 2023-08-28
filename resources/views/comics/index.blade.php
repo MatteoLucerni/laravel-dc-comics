@@ -4,21 +4,29 @@
 
 @section('main-content')
     <main>
-        <a href="{{ route('comics.create') }}" class="d-block text-success text-end text-decoration-none mb-4">
-            + Aggiungi un fumetto
-        </a>
-        <ul>
-            @forelse ($comics as $comic)
-                <li class="mb-4 border p-3 rounded ">
-                    <h4 class="d-inline-block">{{ $comic['title'] }}</h4>
-                    <a class="ms-3" href="{{ route('comics.show', $comic) }}">Più dettagli</a>
-                </li>
-            @empty
-                <h3 class="text-danger">
-                    Nessun fumetto disponibile
-                </h3>
-            @endforelse
-        </ul>
-        <a class="d-block text-center my-5 text-warning" href="{{ route('home') }}">Torna alla home</a>
+        {{-- main-content --}}
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="btn-blue">
+                        CURRENT SERIES
+                    </div>
+                    @foreach ($comics as $comic)
+                        <div class="card">
+                            <a href="{{ route('comics.show', $comic) }}">
+                                <div class="img-container">
+                                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                </div>
+                                <h5>{{ $comic['series'] }}</h5>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                <button href="{{ route('comics.create') }}" class="btn btn-blue">
+                    AGGIUNGI UN FUMETTO
+                </button>
+                <a class="d-block text-center my-5" href="{{ route('home') }}">Torna alla home</a>
+            </div>
+        </section>
     </main>
 @endsection

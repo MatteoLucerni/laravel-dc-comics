@@ -1,7 +1,12 @@
-@use "utils";
 @use "vars" as *;
-@import "~bootstrap/scss/bootstrap";
+@use "utils";
+// @import "~bootstrap/scss/bootstrap";
 @import "style";
 @import "header";
 @import "footer";
 @import "jumbo";
+@import "comic";
+
+body {
+    display: block;
+}
