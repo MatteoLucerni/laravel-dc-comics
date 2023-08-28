@@ -22,9 +22,9 @@
                         </div>
                     @endforeach
                 </div>
-                <button href="{{ route('comics.create') }}" class="btn btn-blue">
+                <a href="{{ route('comics.create') }}" class="btn btn-blue redirect">
                     AGGIUNGI UN FUMETTO
-                </button>
+                </a>
                 <a class="d-block text-center my-5" href="{{ route('home') }}">Torna alla home</a>
             </div>
         </section>

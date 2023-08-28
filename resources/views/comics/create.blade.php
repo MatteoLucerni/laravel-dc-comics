@@ -4,11 +4,11 @@
 
 @section('main-content')
     <main>
-        <div class="card-header text-center my-5">
+        <div class="card-header">
             <h1>Aggiungi il tuo fumetto</h1>
             <a href="{{ route('comics.index') }}">Indietro</a>
         </div>
-        <div class="card-body border border-info rounded p-5 mx-5 mb-5">
+        <div class="card-body">
             <form action="{{ route('comics.store') }}" method="POST">
                 @csrf
                 <div class="row">
@@ -19,7 +19,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="thumb" class="form-label">Immagine (link)</label>
-                            <input name="thumb" required type="url" class="form-control" id="thumb">
+                            <input name="thumb" type="url" class="form-control" id="thumb">
                         </div>
                         <div class="mb-3">
                             <label for="price" class="form-label">Prezzo (in $)</label>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="sale_date" class="form-label">Data</label>
-                            <input name="sale_date" required type="date" class="form-control" id="sale_date">
+                            <input name="sale_date" type="date" class="form-control" id="sale_date">
                         </div>
                         <div class="mb-3">
                             <label for="type" class="form-label">Tipo</label>
@@ -39,17 +39,17 @@
                         </div>
                         <div class="mb-3">
                             <label for="artists" class="form-label">Artisti</label>
-                            <input name="artists" required type="text" class="form-control" id="artists">
+                            <input name="artists" type="text" class="form-control" id="artists">
                         </div>
                         <div class="mb-3">
                             <label for="writers" class="form-label">Scrittori</label>
-                            <input name="writers" required type="text" class="form-control" id="writers">
+                            <input name="writers" type="text" class="form-control" id="writers">
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="my-3 mx-5">
                             <div class="form-floating">
-                                <textarea required name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2"
+                                <textarea name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2"
                                     style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">Descrizione</label>
                             </div>

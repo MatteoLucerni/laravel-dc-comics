@@ -55,6 +55,8 @@ section {
     .card {
         width: calc(100% / 6 - 30px);
         cursor: pointer;
+        background-color: #1c1c1c;
+        flex-direction: row;
     }
 
     .img-container {
@@ -105,6 +107,10 @@ section {
     a.d-block {
         margin-top: 40px;
     }
+
+    a.redirect {
+        padding-top: 14px;
+    }
 }
 
 #action {
@@ -114,4 +120,42 @@ section {
         margin: 50px 0;
         color: blue;
     }
+}
+
+.card-header {
+    margin: 40px 0;
+    text-align: center;
+
+    a {
+        display: inline-block;
+        margin-top: 25px;
+        color: #0282f9;
+    }
+}
+
+.card-body {
+    @import "~bootstrap/scss/bootstrap";
+
+    form {
+        input,
+        textarea {
+            border: 1px solid gray !important;
+            border-radius: 5px !important;
+        }
+    }
+}
+
+.welcome-container {
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
+}
+
+.welcome-button {
+    display: inline-block;
+    color: white;
+    background-color: #0282f9;
+    padding: 20px 50px;
+    margin: 50px;
+    font-weight: 600;
 }
