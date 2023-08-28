@@ -48,15 +48,17 @@
                     </div>
                     <div class="col-12">
                         <div class="mb-3">
-                            <label for="description" class="form-label">Descrizione</label>
-                            <input name="description" required type="text" class="form-control" id="description">
+                            <div class="form-floating">
+                                <textarea name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Descrizione</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="inputs">
-                    <input type="submit" value="CREA">
-                    <input type="reset" value="CANELLA">
-                </div>
+                    <div class="inputs">
+                        <input type="submit" value="CREA">
+                        <input type="reset" value="CANELLA">
+                    </div>
             </form>
         </div>
     </main>
