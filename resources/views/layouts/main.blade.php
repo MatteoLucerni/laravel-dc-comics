@@ -14,8 +14,8 @@
     <div class="container">
         @include('includes.header')
         @yield('main-content')
-        @include('includes.footer')
     </div>
+    @include('includes.footer')
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 
 @section('main-content')
     <main>
-        <a href="{{ route('comics.create') }}" class="d-block text-success text-end text-decoration-none ">
+        <a href="{{ route('comics.create') }}" class="d-block text-success text-end text-decoration-none mb-4">
             + Aggiungi un fumetto
         </a>
         <ul>
@@ -19,6 +19,6 @@
                 </h3>
             @endforelse
         </ul>
-        <a href="{{ route('home') }}">Torna alla home</a>
+        <a class="d-block text-center my-5 text-warning" href="{{ route('home') }}">Torna alla home</a>
     </main>
 @endsection
