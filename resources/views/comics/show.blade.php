@@ -20,7 +20,10 @@
 
         <div class="blue-line"></div>
         <section id="action">
-            <a class="text-center d-block mt-5" href="{{ route('comics.index') }}">Torna alla lista fumetti</a>
+            <div class="options">
+                <a class="left-link" href="{{ route('comics.index') }}">Torna alla lista fumetti</a>
+                <a class="right-link" href="">Modifica il fumetto</a>
+            </div>
             <div class="container">
                 <div class="split-section">
                     <div class="long-side">

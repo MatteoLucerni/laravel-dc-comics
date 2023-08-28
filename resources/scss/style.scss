@@ -113,15 +113,6 @@ section {
     }
 }
 
-#action {
-    a.text-center {
-        text-align: center;
-        display: block;
-        margin: 50px 0;
-        color: blue;
-    }
-}
-
 .card-header {
     margin: 40px 0;
     text-align: center;
@@ -133,14 +124,30 @@ section {
     }
 }
 
-.card-body {
+#action {
     @import "~bootstrap/scss/bootstrap";
 
-    form {
-        input,
-        textarea {
-            border: 1px solid gray !important;
-            border-radius: 5px !important;
+    .card-body {
+        form {
+            input,
+            textarea {
+                border: 1px solid gray !important;
+                border-radius: 5px !important;
+            }
+        }
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2rem;
+            color: #0282f9;
         }
     }
 }
