@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="container">
-        @include('includes.header')
-        @yield('main-content')
-    </div>
+    @include('includes.header')
+    @include('includes.thumb')
+    @yield('main-content')
+    @include('includes.jumbo')
     @include('includes.footer')
 </body>
 

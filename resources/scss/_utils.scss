@@ -21,7 +21,7 @@ a.active {
     justify-content: space-around;
 }
 
-.btn {
+a.btn {
     border: 2px solid $blue;
     padding: 20px;
     color: white;
@@ -45,4 +45,14 @@ a.active {
     i {
         vertical-align: middle;
     }
+}
+
+.btn.green-button {
+    background-color: green;
+    color: white;
+}
+
+.btn.gray-button {
+    background-color: gray;
+    color: white;
 }

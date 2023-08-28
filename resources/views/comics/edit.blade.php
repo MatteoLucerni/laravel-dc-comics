@@ -4,11 +4,11 @@
 
 @section('main-content')
     <main>
-        <div class="card-header text-center my-5">
+        <div class="card-header">
             <h1>Aggiungi il tuo fumetto</h1>
             <a href="{{ route('comics.index') }}">Indietro</a>
         </div>
-        <div class="card-body border border-info rounded p-5 mx-5 mb-5">
+        <div class="card-body">
             <form action="{{ route('comics.store') }}" method="POST">
                 @csrf
                 <div class="row">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="my-3 mx-5">
+                        <div class="mb-3">
                             <div class="form-floating">
                                 <textarea required name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2"
                                     style="height: 100px"></textarea>
@@ -55,9 +55,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="inputs text-center my-5">
-                        <input class="btn green-button" type="submit" value="CREA">
-                        <input class="btn gray-button" type="reset" value="CANELLA">
+                    <div class="inputs">
+                        <input type="submit" value="CREA">
+                        <input type="reset" value="CANELLA">
                     </div>
             </form>
         </div>
