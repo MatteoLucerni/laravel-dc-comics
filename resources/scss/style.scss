@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans Variable", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+// thumb
+.thumb {
+    background-image: url("../../public/images/jumbotron.jpg");
+    height: 300px;
+    background-size: cover;
+    position: relative;
+}
+
+// main content
+#content {
+    background-color: $black;
+    color: white;
+    display: flex;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        > .btn-blue {
+            margin-top: 30px;
+        }
+    }
+
+    h1 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        width: calc(100% / 6 - 30px);
+        cursor: pointer;
+    }
+
+    .img-container {
+        height: 185px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    img {
+        height: 304px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h5 {
+        margin-top: 15px;
+        font-weight: 500;
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+
+        .btn-blue {
+            padding: 16px 20px 0 20px;
+            position: absolute;
+            top: -75px;
+            left: 0;
+        }
+    }
+
+    .btn-blue {
+        height: 50px;
+        padding: 0 20px 0 20px;
+        background-color: $blue;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

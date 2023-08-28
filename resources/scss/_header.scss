@@ -1,0 +1,36 @@
+header {
+    background-color: #fff;
+    padding-bottom: 6px;
+
+    nav {
+        height: 100px;
+    }
+
+    img {
+        height: 80px;
+    }
+
+    ul {
+        display: flex;
+        height: 100%;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+
+    a {
+        color: black;
+        font-weight: 700;
+        font-size: 0.8rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: content-box;
+    }
+
+    ul a:hover {
+        color: $blue;
+        border-bottom: 7px solid $blue;
+    }
+}
