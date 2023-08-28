@@ -166,3 +166,17 @@ section {
     margin: 50px;
     font-weight: 600;
 }
+
+#edit-comic {
+    @import "~bootstrap/scss/bootstrap";
+
+    .card-body {
+        form {
+            input,
+            textarea {
+                border: 1px solid gray !important;
+                border-radius: 5px !important;
+            }
+        }
+    }
+}

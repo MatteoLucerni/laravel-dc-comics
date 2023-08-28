@@ -22,7 +22,7 @@
         <section id="action">
             <div class="options">
                 <a class="left-link" href="{{ route('comics.index') }}">Torna alla lista fumetti</a>
-                <a class="right-link" href="">Modifica il fumetto</a>
+                <a class="right-link" href="{{ route('comics.edit', $comic) }}">Modifica il fumetto</a>
             </div>
             <div class="container">
                 <div class="split-section">
