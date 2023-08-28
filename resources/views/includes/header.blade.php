@@ -12,7 +12,7 @@
             <ul>
                 @foreach ($links as $link)
                     <li>
-                        <a href="{{ $link['url'] }}">
+                        <a @class(['active' => $link['text'] == 'Comics']) href="{{ $link['url'] }}">
                             {{ strtoupper($link['text']) }}
                         </a>
                     </li>
