@@ -49,7 +49,7 @@
                     <div class="col-12">
                         <div class="mb-3">
                             <div class="form-floating">
-                                <textarea name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2"
+                                <textarea required name="description" class="form-control" placeholder="Descrizione..." id="floatingTextarea2"
                                     style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">Descrizione</label>
                             </div>
