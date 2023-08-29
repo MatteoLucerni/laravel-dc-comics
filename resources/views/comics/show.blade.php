@@ -120,6 +120,7 @@
             </div>
         </section>
     </main>
+    {{-- Script per la conferma eliminazione --}}
     <script>
         const deleteForm = document.getElementById('delete-form');
         deleteForm.addEventListener('submit', e => {
