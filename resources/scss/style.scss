@@ -124,6 +124,8 @@ section {
     }
 }
 
+#edit-comic,
+#create-comic,
 #action {
     @import "~bootstrap/scss/bootstrap";
 
@@ -136,7 +138,9 @@ section {
             }
         }
     }
+}
 
+#action {
     .options {
         display: flex;
         align-items: center;
@@ -167,16 +171,6 @@ section {
     font-weight: 600;
 }
 
-#edit-comic {
+#alert-delete {
     @import "~bootstrap/scss/bootstrap";
-
-    .card-body {
-        form {
-            input,
-            textarea {
-                border: 1px solid gray !important;
-                border-radius: 5px !important;
-            }
-        }
-    }
 }
