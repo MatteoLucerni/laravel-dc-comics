@@ -7,6 +7,13 @@
         {{-- main-content --}}
         <section id="content">
             <div class="container">
+                <div id="alert-delete">
+                    @if (session('delete'))
+                        <div class="alert alert-success text-success">
+                            {{ session('delete') }}
+                        </div>
+                    @endif
+                </div>
                 <div class="row">
                     <div class="btn-blue">
                         CURRENT SERIES

@@ -23,6 +23,11 @@
             <div class="options">
                 <a class="left-link" href="{{ route('comics.index') }}">Torna alla lista fumetti</a>
                 <a class="right-link" href="{{ route('comics.edit', $comic) }}">Modifica il fumetto</a>
+                <form id="delete-form" action="{{ route('comics.destroy', $comic) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Elimina il fumetto</button>
+                </form>
             </div>
             <div class="container">
                 <div class="split-section">
@@ -115,4 +120,12 @@
             </div>
         </section>
     </main>
+    <script>
+        const deleteForm = document.getElementById('delete-form');
+        deleteForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const hasConfirmed = confirm('Sei sicuro di voler eliminare questo fumetto?');
+            if (hasConfirmed) deleteForm.submit()
+        })
+    </script>
 @endsection
