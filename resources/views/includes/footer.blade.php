@@ -5,7 +5,6 @@
     $sites = ['DC', 'MAD Magazine', 'DC Kids', 'DC Universe', 'DC Power Visa'];
 @endphp
 <footer>
-    <hr>
     <section id="info-links">
         <div class="container">
             <div class="row">
