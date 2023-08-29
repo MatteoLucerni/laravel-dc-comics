@@ -6,6 +6,6 @@
 @import "jumbo";
 @import "comic";
 
-body {
-    display: block;
+html {
+    display: block !important;
 }

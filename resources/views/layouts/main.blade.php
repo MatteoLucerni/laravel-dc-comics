@@ -8,6 +8,12 @@
     <title>DC Comics: @yield('title')</title>
 
     @vite('resources/js/app.js')
+
+    <style>
+        html {
+            display: none
+        }
+    </style>
 </head>
 
 <body>
