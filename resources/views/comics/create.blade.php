@@ -3,7 +3,7 @@
 @section('title', 'Add Comic')
 
 @section('main-content')
-    <main>
+    <main id="create-comic">
         <div class="card-header">
             <h1>Aggiungi il tuo fumetto</h1>
             <a href="{{ route('comics.index') }}">Indietro</a>
